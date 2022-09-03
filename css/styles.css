@@ -130,6 +130,10 @@ img {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
   }
+  .contacts-icon {
+    fill: currentColor;
+  }
+
   .header-link-item:hover,
   .header-link-item:focus {
     color: var(--accent-color);
@@ -137,6 +141,7 @@ img {
   .header-link-nav.current {
     color: var(--accent-color);
   }
+  
   
 
   /* Index.html */
@@ -289,6 +294,11 @@ img {
     padding: 60px 0;
     background-color: var(--secondary-background-color);
   }
+  .footer-container {
+    display: flex;
+    gap: 95px;
+    align-items: baseline;
+  }
   .address {
     font-style: normal;
   }
@@ -312,6 +322,29 @@ img {
   .footer-link-item:hover,
   .footer-link-item:focus {
     color: var(--accent-color);
+  }
+  .footer-socials-list {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 44px;
+    height: 44px;
+  
+    border-radius: 50%;
+    background-color: var(--icon-fill-footer);
+  
+  color: var(--primary-white-color);
+  }
+  .footer-socials-icon {
+  fill: currentColor;
+  }
+  .footer-socials-link:hover, .footer-socials-link:focus {
+    background-color: var(--accent-color);
   }
   
   /* portfolio */

@@ -35,10 +35,18 @@
 
         <ul class="list site-header">
           <li class="site-header-item">
-            <a href="mailto:info@devstudio.com" class="header-link-item">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="header-link-item">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a>
           </li>
           <li class="site-header-item">
-            <a href="tel:+380961111111" class="header-link-item">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="header-link-item">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use></svg>
+
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -156,30 +164,89 @@
    <!--Підвал сторінки-->
 
    <footer class="footer">
-    <div class="container">
-      <a href="./index.html" class="logo footer-logo"
-        ><span class="logo-first-word">Web</span><span class="logo-second-word">Studio</span></a
-      >
+    <div class="container footer-container">
+      <div class="footer-items">
+        <a href="./index.html" class="logo footer-logo"
+          ><span class="logo-first-word">Web</span><span class="logo-second-word">Studio</span></a
+        >
 
-      <address class="address">
-        <ul class="list footer-address">
-          <li class="footer-link">
+        <address class="address">
+          <ul class="list footer-address">
+            <li class="footer-link">
+              <a
+                href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                class="footer-link-location"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-link">
+              <a href="mailto:info@devstudio.com" class="footer-link-item">info@devstudio.com</a>
+            </li>
+            <li class="footer-link">
+              <a href="tel:+380961111111" class="footer-link-item">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-socials">
+        <p class="footer-text">Приєднуйтесь</p>
+        <ul class="list footer-socials-list">
+          <li>
             <a
-              href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+              class="footer-socials-link"
+              href="https://www.instagram.com/"
               target="_blank"
-              rel="noreferrer noopener nofollow"
-              class="footer-link-location"
-              >м. Київ, пр-т Лесі Українки, 26</a
+              rel="noopener noreferrer"
+              aria-label="Instagram"
             >
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li class="footer-link">
-            <a href="mailto:info@devstudio.com" class="footer-link-item">info@devstudio.com</a>
+          <li>
+            <a
+              class="footer-socials-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
-          <li class="footer-link">
-            <a href="tel:+380961111111" class="footer-link-item">+38 096 111 11 11</a>
+          <li>
+            <a
+              class="footer-socials-link"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-socials-link"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
+            >
+              <svg class="footer-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
+      </div>
     </div>
   </footer>
   </body>
