@@ -79,8 +79,8 @@ img {
 
 /**   HEADER   **/
 .header {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
   }
   .header-container {
@@ -126,7 +126,9 @@ img {
     color: var(--accent-color);
   }
   .header-link-item {
-    
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
     font-weight: 500;
     line-height: 1.17;
@@ -152,17 +154,21 @@ img {
     padding-top: 0;
   }
   .hero {
+    background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-image.jpg);
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--secondary-background-color);
-    background-image: url(../images/hero-image.jpg), linear-gradient(to right, #2f303a66, #2f303a66); ;
-    background-size: cover;
-    background-position: center;   
-
+    text-align: center; 
   }
   .hero-title {
     width: 696px;
@@ -235,15 +241,17 @@ img {
     line-height: 1.71;
     color: var(--secondary-text-color);
   }
-  .values-section {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
+  
+
   .values-section-item {
-  background: var(--another-background-color);
-  border-radius: 4px;
-  padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  
+    background: var(--another-background-color);
   }
   .site-activities {
     display: flex;
@@ -266,7 +274,7 @@ img {
     display: flex;
   }
   .member-caption {
-    padding: 30px 0 16px;
+    margin: 30px 0 16px;
   }
   .team-member-name {
     margin-bottom: 10px;
@@ -326,13 +334,28 @@ img {
     border-radius: 4px;
     color: var(--icon-fill);
   }
+
+  .clients-section-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+  
+    cursor: pointer;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: var(--icon-fill);
+  }
+  .clients-section-link:hover,
+  .clients-section-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+  
   .clients-section-icon {
     fill: currentColor;
   }
-  .clients-section-item:hover, .clients-section-item:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-  }
+ 
   
 /* Підвал сторінки */
 
@@ -385,10 +408,7 @@ img {
     line-height: 1.71;
     color: var(--footer-location-color);
   }
-  .footer-link-location:hover,
-  .footer-link-location:focus {
-    color: var(--accent-color);
-  }
+  
   .footer-link-item:hover,
   .footer-link-item:focus {
     color: var(--accent-color);
@@ -428,13 +448,7 @@ img {
     display: flex;
     flex-wrap: wrap;
   }
-  .product-list-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  .product-list-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   
-  }
   .product-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
@@ -463,10 +477,19 @@ img {
   .menu-button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   .product-link {
+    display: block;
     text-decoration: none;
+
   }
+  .product-link:hover, .product-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
   .product-name {
     margin-bottom: 4px;
   
